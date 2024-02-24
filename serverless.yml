@@ -1,0 +1,20 @@
+service: medium-api-proxy
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+plugins:
+  - serverless-offline
+	
+functions:
+  openai_handler:
+    handler: index.handler
+    timeout: 30
+    memory: 4096
+    events:
+      - http:
+          path: /chartprompt
+          method: post
+          cors: true
+
