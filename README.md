@@ -1,7 +1,7 @@
 
 
-# A wrapper for the Medium API
+# A wrapper for the OpenAI library
 
-This is a simple wrapper around the public GraphQL API offered by Medium.
-The wrapper will return basic information about all the posts created by a user.
+This is for a specific use case where we want EChart configurations from ChatGPT.
+A user needs to provide a prompt and and API key
 
