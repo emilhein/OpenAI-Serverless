@@ -11,7 +11,7 @@ functions:
   openai_handler:
     handler: index.handler
     timeout: 30
-    memory: 4096
+    memorySize: 4096
     events:
       - http:
           path: /chartprompt
